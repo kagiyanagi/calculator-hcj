@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="main-box">
+        <div class="theme-mode">
+            <button class="day-mode" onclick="lightMode()">
+                <i class="material-symbols-outlined">wb_sunny</i>
+            </button>
+            <button class="night-mode" onclick="darkMode()">
+                <i class="material-symbols-outlined">dark_mode</i>
+            </button>
+        </div>
+        <div class="result-box">
+            <h2 id="result-history">0</h2>
+            <h1 id="result">0</h1>
+        </div>
+        <div class="input-box">
+            <button onclick="allclear()" style="color: #00ffd3;">AC</span></button>
+            <button onclick="undo()">
+                <span class="green">
+                    <i class="material-symbols-outlined">undo</i>
+                </span>
+            </button>
+            <button onclick="opprate(' % ')">
+                <span class="green">%</span>
+            </button>
+            <button onclick="opprate(' / ')">
+                <span class="red bold">÷</span>
+            </button>
+            <button onclick="opprate('1')" accesskey="g">1</button>
+            <button onclick="opprate('2')">2</button>
+            <button onclick="opprate('3')">3</button>
+            <button onclick="opprate(' * ')">
+                <span class="red">x</span>
+            </button>
+            <button onclick="opprate('4')">4</button>
+            <button onclick="opprate('5')">5</button>
+            <button onclick="opprate('6')">6</button>
+            <button onclick="opprate(' - ')">
+                <span class="red bold">-</span>
+            </button>
+            <button onclick="opprate('7')">7</button>
+            <button onclick="opprate('8')">8</button>
+            <button onclick="opprate('9')">9</button>
+            <button onclick="opprate(' + ')">
+                <span class="red">+</span>
+            </button>
+            <button class="rotate" onclick="historyBox()">
+                <i class="material-symbols-outlined">history</i>
+            </button>
+            <button onclick="opprate('0')">0</button>
+            <button class="bold" onclick="opprate('.')">.</button>
+            <button onclick="equals()">
+                <span class="red">=</span>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

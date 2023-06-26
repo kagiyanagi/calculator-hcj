@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Page not found.</title>
+</head>
+<body>
+    <p id="text">2 - 2 * 2 / 2 + 2</p>
+</body>
+<script>
+    const textElement = document.getElementById('text');
+    const expression = textElement.textContent;
+
+    const symbolsToColor = ['-', '*', '/', '+'];
+
+    const coloredExpression = expression.split('').map(char => {
+    if (symbolsToColor.includes(char)) {
+        return `<span style="color: red;">${char}</span>`;
+    }
+    return char;
+    }).join('');
+
+    textElement.innerHTML = coloredExpression;
+</script>
+</html>
