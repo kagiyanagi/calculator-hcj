@@ -18,7 +18,7 @@
 ### Follow the commands.
 
 1. But first you have to clone the repo
-- ```https://github.com/aiamanme/calculator-hcj.git```
+- ```git clone https://github.com/aiamanme/calculator-hcj.git```
 
 All done 🤔?  
 Then just make you changes ✍️ and create pull request!  
