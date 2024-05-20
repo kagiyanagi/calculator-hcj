@@ -1,4 +1,4 @@
-# Simpel 🙂 calculator made ✍️ in Html css js
+# Simpel 🙂 Calculator made ✍️ in Html css js
 
 ### File structure :
 
